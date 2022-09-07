@@ -23,7 +23,13 @@ function Creatdb(){
                 book_name VARCHAR(25) NOT NULL,
                 book_publisher VARCHAR(20),
                 book_price FLOAT
-            )";
+            );";
+        
+        if(mysqli_query($connection,$sql)){
+            return $connection;
+        }else{
+            echo "Cannot Create Table...!";
+        }
     }
     else{
         echo "Error while creating database".mysqli_error($connection);
