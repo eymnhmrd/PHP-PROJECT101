@@ -10,6 +10,15 @@
 }
 
 table.btnedit {
-    color: salmon;
     cursor: pointer;
+}
+
+.success {
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.error {
+    background-color: tomato;
+    padding: 1em;
 }
